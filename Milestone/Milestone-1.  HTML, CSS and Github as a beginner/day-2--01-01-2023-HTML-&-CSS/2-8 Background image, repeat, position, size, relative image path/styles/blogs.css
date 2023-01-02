@@ -1,0 +1,26 @@
+
+header {
+  height: 200px;
+  /* background-image: url('../Dog-Pose-03.png'); */
+  /* background-image: url('../images/Elephant-Pose-04.png'); */
+  background-image: url('../images/home_4.jpg');
+  /* background-size: 10%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: gray;
+  background-blend-mode: multiply;
+}
+
+h3 {
+  color: magenta;
+}
+
+p {
+  color: blueviolet;
+}
+
+.page-title {
+  font-weight: 900;
+  font-family: 'Courier New', Courier, monospace;
+}

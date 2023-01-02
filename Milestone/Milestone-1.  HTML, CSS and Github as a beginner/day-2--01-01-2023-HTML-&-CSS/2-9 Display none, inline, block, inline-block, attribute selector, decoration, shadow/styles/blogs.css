@@ -1,0 +1,45 @@
+
+header {
+  height: 200px;
+  /* background-image: url('../Dog-Pose-03.png'); */
+  /* background-image: url('../images/Elephant-Pose-04.png'); */
+  background-image: url('../images/home_4.jpg');
+  /* background-size: 10%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: gray;
+  background-blend-mode: multiply;
+}
+
+h3 {
+  color: magenta;
+  text-decoration: underline wavy green;
+}
+
+p {
+  color: blueviolet;
+}
+
+.page-title {
+  font-weight: 900;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  border: 1px solid purple;
+  height: 200px;
+  width: 300px;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+.blog {
+  background: peru;
+  box-shadow: 10px 10px 15px gray;
+  margin-bottom: 100px;
+}

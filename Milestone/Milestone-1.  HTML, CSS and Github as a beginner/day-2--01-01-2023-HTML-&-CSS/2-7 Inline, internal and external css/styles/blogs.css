@@ -1,0 +1,13 @@
+
+h3 {
+  color: magenta;
+}
+
+p {
+  color: blueviolet;
+}
+
+.page-title {
+  font-weight: 900;
+  font-family: 'Courier New', Courier, monospace;
+}

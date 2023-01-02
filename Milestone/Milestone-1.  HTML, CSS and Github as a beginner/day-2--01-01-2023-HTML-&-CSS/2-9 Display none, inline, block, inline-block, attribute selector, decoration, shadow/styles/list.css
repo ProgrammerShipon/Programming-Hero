@@ -1,0 +1,8 @@
+.external-style{
+  color: gold;
+}
+
+ul li {
+  color: purple;
+  display: inline;
+}
