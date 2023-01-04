@@ -1,0 +1,41 @@
+nav > ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin-right: 10px;
+  padding: 0 5px;
+}
+
+nav li:hover {
+  background-color: lightgray;
+
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+/* Nested Menu */
+nav li .dropdown,
+.sub_dropdown {
+  /* display: none; */
+  visibility: hidden;
+  position: absolute;
+  background-color: lightseagreen;
+  padding-left: 5px;
+}
+
+nav ul li:hover > .dropdown {
+  /* display: block; */
+  visibility: visible;
+}
+
+.dropdown li:hover > .sub_dropdown {
+  /* display: block; */
+  visibility: visible;
+  margin-left: 60px;
+}
