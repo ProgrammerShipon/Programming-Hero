@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Optimize images </title>
+	<style>
+		.container, .inner {
+			width: 150px;
+			height: 150px;
+			border: 2px solid khaki;
+		}
+
+		.container {
+			background-color: lightblue;
+		}
+
+		.inner {
+			background-color: lightcoral;
+			/* transform: scale(0.75); */
+			/* transform: rotate(45deg); */
+			transform: rotate(45deg) scale(0.5) translate(50px, 50px);
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>Transformer I am comming </h1>
+
+	<box class="container">
+		<div class="inner">box-1</div>
+	</box>
+	<box class="container">
+		<div class="inner">box-2</div>
+	</box>
+	<box class="container">
+		<div class="inner">box-3</div>
+	</box>
+</body>
+
+</html>

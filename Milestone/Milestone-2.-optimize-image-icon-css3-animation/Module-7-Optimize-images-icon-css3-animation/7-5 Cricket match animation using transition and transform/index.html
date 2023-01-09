@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Optimize images </title>
+	<style>
+		.field {
+			border: 1px solid;
+			cursor: pointer;
+		}
+
+		.bat {
+			height: 400px;
+			transform-origin: top right;
+			transition: transform 0.3s ease-out;
+		}
+
+		.field:hover .bat {
+			transform: rotate(-70deg);
+		}
+
+		.ball {
+			width: 50px;
+			height: 50px;
+			border-radius: 25px;
+			background-color: red;
+			position: relative;
+			left: 413px;
+			transition: transform 1s ease-out 0.13s;
+		}
+
+		.field:hover .ball {
+			transform: translate(800px, -500px);
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="field">
+		<img src="./img/bat.png" alt="" class="bat">
+		<div class="ball"></div>
+	</div>
+
+</body>
+
+</html>
