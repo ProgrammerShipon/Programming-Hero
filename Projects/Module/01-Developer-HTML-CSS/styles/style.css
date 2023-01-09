@@ -134,7 +134,7 @@ main {
   font-weight: 700;
 }
 
-.about-description {
+.section-description {
   color: #757575;
   font-size: 18px;
   margin-bottom: 30px;
@@ -155,4 +155,91 @@ main {
   font-weight: 700;
   font-size: 20px;
   color: #474747;
+}
+
+
+
+/* What I Do */
+.what-i-do {
+  margin-top: 130px;
+  text-align: center;
+}
+
+.skills-items {
+  display: flex;
+  text-align: left;
+  gap: 24px;
+}
+
+.skill-item {
+  background: #fff;
+  box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.skill-item h2 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.skill-item p {
+  color: #757575;
+}
+
+/* My Resume */
+.MyResume {
+  text-align: center;
+}
+
+.MyResume .section-title {
+  text-align: center;
+}
+
+.MyResume .section-items {
+  text-align: left;
+  gap: 70px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.section-items .resume-section {
+  width: 50%;
+}
+
+.resume-section .section-title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 23px;
+}
+
+.resume-items .resume-item {
+  margin: 20px 0;
+}
+
+.resume-item h4.item-title {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.resume-item h6.resume-sub-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #484848;
+  margin-bottom: 16px;
+}
+
+article.resume-item p {
+  line-height: 23px;
+  color: #302e2e;
+}
+
+.MyResume .btn {
+  background: #1c62a1;
+  color: #fafafa;
 }
