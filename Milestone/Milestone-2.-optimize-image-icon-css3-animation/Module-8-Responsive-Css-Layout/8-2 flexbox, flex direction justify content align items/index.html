@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Explore Flexbox </title>
+  <style>
+
+
+
+    .container {
+      height: 300px;
+      width: 700px;
+      border: 3px dotted purple;
+      display: flex;
+      /* justify-content: flex-start; */
+      /* justify-content: flex-end; */
+      justify-content: center;
+      /* justify-content: space-evenly; */
+      /* justify-content: space-between; */
+      /* justify-content: space-around; */
+      /* align-items: flex-start; */
+      /* align-items: flex-end; */
+      /* align-items: center; */
+      /* flex-wrap: wrap; */
+      /* align-items: stretch; */
+    }
+
+    .box {
+      font-size: 23px;
+      font-weight: 700;
+      border: 3px dashed peru;
+      width: 100px;
+      height: 100px;
+    }
+
+    #box-2{
+      flex-grow: 1;
+    }
+    
+  </style>
+</head>
+<body>
+  <section class="container">
+    <div class="box">Box-1
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, enim.</p>
+    </div>
+    <div class="box" id="box-2">Box-2
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, exercitationem minus. Illum ipsam minus commodi doloribus, at officiis harum autem!</p>
+    </div>
+    <div class="box">Box-3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iure nulla distinctio vero sit, corrupti, impedit mollitia quae autem quis voluptatem repellat, placeat illo dolorem maxime ut accusamus quisquam animi.</div>
+  </section>
+
+  <script src="./main.js"></script>
+</body>
+</html>

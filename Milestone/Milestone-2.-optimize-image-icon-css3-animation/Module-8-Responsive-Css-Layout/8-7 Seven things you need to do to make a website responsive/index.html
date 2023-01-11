@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Responsive Website </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <style>
+    body {
+      width: 800px;
+      margin: 0 auto;
+      border: 1px solid plum;
+    }
+
+    h1 {
+      font-size: 4vw;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .container-two {
+      display: flex;
+    }
+
+    .container-two .split {
+      width: 50%;
+    }
+
+    .split img {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 576px) {
+      .container-two {
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+      }
+
+      .container-two .split {
+        width: 100%;
+      }
+
+      .split img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 
+      1. viewport meta tag;
+      2. CSS Relative unit;
+      3. Responsive Image ( Fluid Image );
+      4. body max-with and margin auto;
+      5. Responsive Split screen usng flex
+     -->
+
+  <section>
+    <h1> My Responsive Website </h1>
+    <img src="./shipon.JPG" alt="">
+  </section>
+
+  <section>
+    <h2> Two Parts </h2>
+    <div class="container-two">
+      <div class="split">
+        <img src="./food.png" alt="">
+      </div>
+      <div class="split">
+        <img src="./shipon.JPG" alt="">
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
