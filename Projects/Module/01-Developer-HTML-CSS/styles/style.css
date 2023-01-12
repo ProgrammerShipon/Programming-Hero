@@ -20,6 +20,7 @@ a {
 }
 
 .btn-primary {
+  font-size: 19px;
   color: #fff;
   height: 64px;
   border-radius: 5px;
@@ -32,11 +33,24 @@ a {
   transition: all .4s;
 }
 
+.btn-primary i {
+  margin-right: 10px;
+}
+
 .btn-primary:hover {
   background-color: transparent;
   border-color: #fd6e0a;
   color: #fd6e0a;
 }
+
+.section-title {
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
 
 /* header section */
 header {
@@ -128,12 +142,6 @@ main {
   text-align: center;
 }
 
-.section-title {
-  margin-bottom: 30px;
-  font-size: 35px;
-  font-weight: 700;
-}
-
 .section-description {
   color: #757575;
   font-size: 18px;
@@ -191,10 +199,7 @@ main {
 
 /* My Resume */
 .MyResume {
-  text-align: center;
-}
-
-.MyResume .section-title {
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -211,7 +216,6 @@ main {
 }
 
 .resume-section .section-title {
-  text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
   font-size: 23px;
@@ -242,4 +246,72 @@ article.resume-item p {
 .MyResume .btn {
   background: #1c62a1;
   color: #fafafa;
+}
+
+/* Footer Area design */
+footer {
+    padding: 100px 0;
+    background: #fff8f3;
+    margin-top: 100px;
+}
+
+footer .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+
+
+footer .connect {
+    width: 50%;
+}
+
+footer h2 {
+    font-size: 28px;
+    margin-bottom: 21px;
+}
+
+footer .connect p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.connect .footer-social {
+    margin-top: 17px;
+    font-size: 27px;
+    display: flex;
+    gap: 11px;
+}
+
+.from-content {
+    width: 50%;
+}
+
+.input-group {
+    width: 90%;
+}
+
+.input-group input,
+.input-group textarea {
+    font-size: 18px;
+    padding: 11px 19px;
+    border-radius: 9px;
+    border: none;
+    width: 100%;
+}
+
+.from-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.input-group textarea {
+    height: 100px;
 }
