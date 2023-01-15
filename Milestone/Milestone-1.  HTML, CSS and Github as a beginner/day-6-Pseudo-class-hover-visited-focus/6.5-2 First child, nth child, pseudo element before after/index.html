@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Pseudo class hover, visited, focus </title>
+  <style>
+    h1:hover {
+      color: skyblue;
+      background-color: seagreen;
+      margin: -50px;
+      padding: 50px;
+      font-size: 50px;
+      font-weight: 799;
+    }
+    .middle-person {
+      color: blue;
+      border-color: blue;
+      padding: 5px 8px;
+    }
+    a:visited {
+      color: red;
+    }
+    li:first-child {
+      color: chocolate;
+    }
+    li:last-child {
+      background-color: cornflowerblue;
+    }
+    li:nth-child(n){
+      color: red;
+    }
+    li:nth-child(2n) {
+      background-color: darkgray;
+    }
+    li:nth-child(2n+1) {
+      background-color: blueviolet;
+    }
+
+    /* sudo selector */
+    h3::before {
+      content: 'Hello ';
+    }
+
+    h3::after {
+      content: ' gello';
+      background-color: darkkhaki;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+    <h1> This is normal</h1><br>
+    <input type="text"><br>
+    <input class="middle-person" type="text"><br>
+    <input  type="text"><br>
+    <a target="_blank" href="https://www.google.com/"> Google </a>
+    <ul>
+      <li>i am first</li>
+      <li>koi geli re</li>
+      <li>ei dike ay re</li>
+      <li>asbi na , na ki</li>
+      <li> ki holo </li>
+      <li>thik ache aste hobe na</li>
+    </ul>
+    <h3>something text -1</h3>
+    <h3>something text -2</h3>
+    <h3>something text -3</h3>
+    <h3>something text -4</h3>
+    <h3>something text -5</h3>
+    <h3>something text -6</h3>
+</body>
+</html>
