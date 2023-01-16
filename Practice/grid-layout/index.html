@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box-1 {
+        grid-area: box-1;
+      }
+
+      .box-2 {
+        grid-area: box-2;
+      }
+
+      .box-3 {
+        grid-area: box-3;
+      }
+
+      .box-4 {
+        grid-area: box-4;
+      }
+
+      .box-5 {
+        grid-area: box-5;
+      }
+
+      .box-6 {
+        grid-area: box-6;
+      }
+
+      .box-7 {
+        grid-area: box-7;
+      }
+
+      .box-8 {
+        grid-area: box-8;
+      }
+      .box-9 {
+        grid-area: box-9;
+      }
+
+      .box-10 {
+        grid-area: box-10;
+      }
+
+      .box-11 {
+        grid-area: box-11;
+      }
+
+      .box-12 {
+        grid-area: box-12;
+      }
+
+      .box-13 {
+        grid-area: box-13;
+      }
+
+      .box-14 {
+        grid-area: box-14;
+      }
+
+      .box-15 {
+        grid-area: box-15;
+      }
+
+      .box-16 {
+        grid-area: box-16;
+      }
+
+      .container {
+        display: grid;
+        grid-template-areas:
+          "box-1 box-1 box-2 box-3"
+          "box-1 box-1 box-4 box-5"
+          "box-6 box-7 box-8 box-8"
+          "box-9 box-10 box-8 box-8"
+          "box-11 box-11 box-12 box-13"
+          "box-11 box-11 box-15 box-16";
+        gap: 10px;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+
+      .box {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="box box-1">Box-1</div>
+      <div class="box box-2">Box-2</div>
+      <div class="box box-3">Box-3</div>
+      <div class="box box-4">Box-4</div>
+      <div class="box box-5">Box-5</div>
+      <div class="box box-6">Box-6</div>
+      <div class="box box-7">Box-7</div>
+      <div class="box box-8">Box-8</div>
+      <div class="box box-9">Box-9</div>
+      <div class="box box-10">Box-10</div>
+      <div class="box box-11">Box-11</div>
+      <div class="box box-12">Box-12</div>
+      <div class="box box-13">Box-13</div>
+      <div class="box box-14">Box-14</div>
+      <div class="box box-15">Box-15</div>
+      <div class="box box-16">Box-16</div>
+      <div class="box box-16">Box-17</div>
+      <div class="box box-16">Box-18</div>
+      <div class="box box-16">Box-19</div>
+    </section>
+
+</body>
+</html>
