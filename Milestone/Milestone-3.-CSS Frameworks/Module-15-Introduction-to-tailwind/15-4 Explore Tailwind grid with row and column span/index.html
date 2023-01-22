@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Tailwind grid with row and column span</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section>
+      <h3 class="text-3xl">My Guddu guddu grid</h3>
+      <div class="grid grid-cols-4 gap-4">
+        <div class="bg-sky-200">1</div>
+        <div class="bg-sky-300 col-span-2">2</div>
+        <div class="bg-sky-200">3</div>
+        <div class="bg-sky-300 row-span-4">4</div>
+        <div class="bg-sky-400 col-span-3">5</div>
+        <div class="bg-sky-200">6</div>
+        <div class="bg-sky-200">7</div>
+        <div class="bg-sky-200">8</div>
+        <div class="bg-sky-200">9</div>
+        <div class="bg-sky-200">10</div>
+        <div class="bg-sky-200">11</div>
+        <div class="bg-sky-200">12</div>
+        <div class="bg-sky-200">13</div>
+        <div class="bg-sky-200">14</div>
+        <div class="bg-sky-200">15</div>
+      </div>
+    </section>
+
+    <section>
+      <h4 class="text-4xl">My Grid Layout</h4>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="bg-yellow-200 col-span-3">Header</div>
+        <div class="bg-yellow-200 col-span-2 h-64">Main Content</div>
+        <div class="bg-yellow-200">Side nav</div>
+        <div class="bg-yellow-200 col-span-3">Footer</div>
+      </div>
+    </section>
+  </body>
+</html>
