@@ -1,0 +1,45 @@
+@use "./variables";
+
+$primary-color: blue;
+
+nav {
+  ul {
+    border: 1px solid $primary-color;
+
+    li {
+      color: gray;
+
+      a {
+        text-decoration: line-through;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+h1 {
+  color: $primary-color;
+}
+
+p {
+  background-color: $primary-color;
+  color: white;
+  margin: 5px;
+  padding: 15px;
+  font-size: variables.$large-font;
+}
+
+ul {
+  border: 2px solid $primary-color;
+}
+
+button {
+  background-color: #1e1e1e;
+  color: #f3f3f3;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #c30000;
+    color: #ffffff;
+  }
+}
