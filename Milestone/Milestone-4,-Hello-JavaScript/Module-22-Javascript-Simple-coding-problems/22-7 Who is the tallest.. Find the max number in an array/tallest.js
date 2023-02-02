@@ -35,10 +35,3 @@ function maxInArray(number) {
 const heights = [167, 190, 120, 574, 165, 137];
 const tallest = maxInArray(heights);
 console.log("tallest person : ", tallest);
-
-
-/**
- * Home Work 
- * 
- * write a function to get the lowest number in an array
- */
