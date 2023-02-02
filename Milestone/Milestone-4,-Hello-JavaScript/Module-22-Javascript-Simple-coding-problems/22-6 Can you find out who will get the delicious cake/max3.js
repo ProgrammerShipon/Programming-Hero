@@ -14,13 +14,3 @@ console.log('Math.max Number : ', Math.max(23, 34, 3464, 3, 3, 322, 324, 324, 23
 console.log('Math.min Number : ', Math.min(23, 34, 3464, 3, 3, 322, 324, 324, 234, 5345, 3, 5345434, 64, 645, 6, 45));
 
 
-
-
-/**
- *    Homework: - 1 
- *  Write a function that will take 3 numbers will return the max number
- *  Write a function that will take 3 parameters and will return the min number 
- * 
- * first time do it using  if else 
- * second time do it using math.min or math.max
- */
