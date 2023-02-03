@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*====================== Common Css =======================*/
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 65px 0;
+}
+
+.btn {
+  border: 1px solid transparent;
+  font-size: 22px;
+  padding: 16px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.section-title {
+  font-size: 30px;
+  line-height: 100px;
+}
+
+
+/*======================= Header Area =======================*/
+
+header.header {
+  background-image: url('../images/banner/banner3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header .banner-area {
+  color: white;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.header .banner-area h1 {
+  font-size: 50px;
+  margin-bottom: 31px;
+}
+
+.banner-area p {
+  font-size: 20px;
+  line-height: 29px;
+  margin-bottom: 34px;
+}
+
+
+/*====================== My Failures ======================*/
+.myFailures-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+}
+
+.myFailures-area .img-side {
+  width: 50%;
+  position: relative;
+}
+
+.myFailures-area .img-side:after {
+  content: '';
+  width: 450px;
+  height: 450px;
+  background: #0058af4d;
+  position: absolute;
+  left: 51px;
+  bottom: 68px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.img-side img {
+  transform: rotateY(180deg);
+  border-bottom-right-radius: 60%;
+  border-bottom-left-radius: 60%;
+}
+
+.myFailures-area .descrption-side {
+  width: 50%;
+}
+
+.descrption-side p {
+  margin-bottom: 23px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #444343;
+}
+
+.descrption-side ul {
+  color: #444343;
+  line-height: 30px;
+}
+
+.descrption-side ul li {
+  list-style: none;
+}
+
+.descrption-side ul li:before {
+  content: '✓';
+  margin-right: 10px;
+  color: #16D887;
+  font-weight: 900;
+}
+
+
+
+
+/*====================== My Plans Area ======================*/
+.myPlan-area .section-title {
+  text-align: center;
+}
+
+.skills-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.skills-items .skill-item {
+  text-align: center;
+  line-height: 30px;
+}
+
+
+/*========================= My Resume =========================*/
+.MyResume {
+  text-align: center;
+}
+
+.MyResume .section-title {
+  text-align: center;
+}
+
+.MyResume .section-items {
+  text-align: left;
+  gap: 70px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.section-items .resume-section {
+  width: 50%;
+}
+
+.resume-section .resume-title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 23px;
+}
+
+.resume-items .resume-item {
+  margin: 20px 0;
+}
+
+.resume-item h4.item-title {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.resume-item h6.resume-sub-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #484848;
+  margin-bottom: 16px;
+}
+
+article.resume-item p {
+  line-height: 23px;
+  color: #302e2e;
+}
+
+.MyResume .btn {
+  background: #1c62a1;
+  color: #fafafa;
+}
+
+
+/*========================= Call Now =========================*/
+section.container.callNow-area {
+  margin-bottom: 60px;
+  margin-top: 65px;
+}
+
+.callNow-area {
+  background-image: linear-gradient(to right, #1b66a7, #1b66a7cc, transparent), url(../images/watch.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 40px;
+  border-radius: 5px;
+}
+
+.callNow-area h2 {
+  margin-bottom: 24px;
+  color: white;
+}
+
+.callNow-area .btn {
+  color: #1b66a7;
+}
+
+
+
+/*===================== Footer Area =====================*/
+
+footer {
+  background: #151414;
+}
+
+.footer-area {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 65px;
+}
+
+.footer-description-side {
+  width: 50%;
+}
+
+.footer-form-side {
+  width: 50%;
+}
+
+.footer-area h1 {
+  color: #f8f8f8;
+}
+
+.footer-area p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-area .footer-social-icons {
+  display: flex;
+  gap: 14px;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.footer-area .footer-social-icons img {
+  width: 36px;
+}
+
+.footer-form-side form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.footer-form-side form input {
+  font-size: 20px;
+  padding: 10px 15px;
+  background: transparent;
+  border: 1px solid #F3F3F3;
+  border-radius: 6px;
+  color: white;
+}
+
+.footer-form-side form .btn {
+  background: #1b66a7;
+  color: #fff;
+}
