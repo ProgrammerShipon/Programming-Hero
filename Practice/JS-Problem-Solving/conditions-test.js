@@ -1,5 +1,3 @@
-console.clear();
-
 var amount = 19000;
 
 if (amount >= 80000) {
