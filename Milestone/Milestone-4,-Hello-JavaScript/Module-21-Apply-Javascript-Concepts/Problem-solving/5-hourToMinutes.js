@@ -17,16 +17,30 @@ function getHourToSeconds(hour) {
 }
 
 function getSecondsToHour(second) {
-  let hour = hour / 60 / 60;
+  let hour = second / 60 / 60;
   hour = hour.toFixed(2);
   return hour;
 }
 
+function timeConvert(n) {
+  var num = n;
+  var hours = num / 60;
+  var rhours = Math.floor(hours);
+  var minutes = (hours - rhours) * 60;
+  var rminutes = Math.round(minutes);
+  return (
+    num + " minutes = " + rhours + " hour(s) and " + rminutes + " minute(s)."
+  );
+}
+console.log(timeConvert(25));
+
 function getMinutesToHour(minutes) {
   let hour = minutes / 60;
-  hour = hour.toFixed(2);
+  // hour = hour.toFixed(2);
+  hour = Math.floor(hour);
   return hour;
 }
+// console.log(getMinutesToHour(25))
 
 function getMinutesToSecond(minutes) {
   let second = minutes / 60;
@@ -81,5 +95,5 @@ function getConvertTime(current, number, times) {
   }
 }
 
-let rel = getConvertTime("M", 25, "H");
-console.log(rel);
+// let rel = getConvertTime("M", 25, "H");
+// console.log(rel);
