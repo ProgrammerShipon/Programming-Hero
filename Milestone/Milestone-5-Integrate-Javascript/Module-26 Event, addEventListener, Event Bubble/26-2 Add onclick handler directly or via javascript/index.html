@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM EVENTS</title>
+  </head>
+  <body>
+    <h1 onclick="console.log('I am clicked')">DOM er ajke special events</h1>
+    <button onclick="console.log(7)">Click Me</button>
+    <button onclick="console.log(65)">Another button</button>
+
+    <button onclick="document.body.style.backgroundColor='yellow'">
+      Background Change
+    </button>
+
+    <button onclick="makeRad()">Make Red</button>
+    <button onclick="makeBlue()">Make Blue</button>
+
+    <script>
+      function makeRad() {
+        document.body.style.backgroundColor = "red";
+      }
+    </script>
+    <script src="./js/events.js"></script>
+  </body>
+</html>
