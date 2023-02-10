@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Delegate</title>
+    <style>
+      /* body {
+        border: 2px solid #000000;
+      }
+      
+       section {
+        border: 2px solid #47ff5c;
+      }
+
+      ul {
+        border: 2px solid tomato;
+      }
+
+      #id-2 {
+        border: 2px solid black;
+      } */
+    </style>
+  </head>
+  <body id="body">
+    <h1>Explore Event Delegate</h1>
+
+    <section id="list-container">
+      <ul id="list-ul">
+        <li class="item">Lorem, ipsum</li>
+        <li class="item">At, repudiandae,</li>
+        <li class="item">Explicabo, dolorem,</li>
+        <li class="item">veritatis, perspiciatis!</li>
+        <li class="item">accusatium</li>
+        <li class="item">Quam, quibusdam!</li>
+      </ul>
+      <button id="btn-add-item">Add Item</button>
+    </section>
+
+    <script>
+      // const items = document.getElementsByClassName("item");
+      // for (const item of items) {
+      //   item.addEventListener("click", function (event) {
+      //     console.log(item);
+      //     console.log(event.target);
+      //     console.log(event.target.parentNode);
+      //     console.log(event.target.parentNode.removeChild(event.target));
+      //   });
+      // }
+
+      document
+        .getElementById("list-ul")
+        .addEventListener("click", function (event) {
+          console.log(event.target);
+          console.log(event.target.parentNode.removeChild(event.target));
+        });
+
+      document
+        .getElementById("btn-add-item")
+        .addEventListener("click", function () {
+          const listContainer = document.getElementById("list-ul");
+          const li = document.createElement("li");
+          li.innerText = "Brand New Item added";
+          li.classList.add("item");
+          listContainer.appendChild(li);
+        });
+    </script>
+    <script src="./js/events.js"></script>
+  </body>
+</html>
