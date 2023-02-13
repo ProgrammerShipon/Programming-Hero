@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baper Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="mb-5 mt-12 text-4xl text-center text-red-600">
+        Bank Dashboard
+      </h1>
+    </header>
+    <main>
+      <section class="mx-auto w-3/4">
+        <div class="grid grid-cols-3 gap-4">
+          <div
+            class="bg-indigo-500 px-5 py-5 rounded-lg shadow-indigo-500/50 shadow-lg text-white"
+          >
+            <h2 class="mb-2 text-2xl capitalize">Deposit</h2>
+            <h1 class="font-semibold text-5xl">
+              $ <span id="total-deposit">00</span>
+            </h1>
+          </div>
+          <div
+            class="bg-violet-600 px-5 py-5 rounded-lg shadow-violet-500/50 shadow-lg text-white"
+          >
+            <h2 class="mb-2 text-2xl capitalize">Withdraw</h2>
+            <h1 class="font-semibold text-5xl">
+              $ <span id="total-deposit">00</span>
+            </h1>
+          </div>
+          <div
+            class="bg-fuchsia-500 px-5 py-5 rounded-lg shadow-fuchsia-500/50 shadow-lg text-white"
+          >
+            <h2 class="mb-2 text-2xl capitalize">Balance</h2>
+            <h1 class="font-semibold text-5xl">
+              $ <span id="total-deposit">00</span>
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-8 mx-auto py-4 w-3/4">
+        <div class="grid grid-cols-2 gap-5">
+          <div
+            class="bg-cyan-500 px-8 py-7 rounded-lg shadow-cyan-500/50 shadow-lg"
+          >
+            <h1 class="mb-4 text-3xl text-white">Deposit Now</h1>
+            <input
+              id="deposit-field"
+              type="number"
+              placeholder="$ Your Deposit Amount"
+              class="block mb-4 px-4 py-3 rounded text-2xl w-full"
+            />
+            <button
+              id="deposit-btn"
+              class="bg-fuchsia-500 duration-300 ease-in-out hover:bg-indigo-500 px-8 py-3 rounded-lg shadow-fuchsia-500/50 shadow-lg text-2xl text-white"
+            >
+              Deposit
+            </button>
+          </div>
+          <div
+            class="bg-purple-600 px-8 py-7 rounded-lg shadow-purple-500/50 shadow-lg"
+          >
+            <h1 class="mb-4 text-3xl text-white">Withdraw Now</h1>
+            <input
+              id="withdraw-field"
+              type="number"
+              placeholder="$ Your Deposit Amount"
+              class="block mb-4 px-4 py-3 rounded text-2xl w-full"
+            />
+            <button
+              id="withdraw-btn"
+              class="bg-cyan-500 duration-300 ease-in-out hover:bg-violet-800 px-8 py-3 rounded-lg shadow-fuchsia-500/50 shadow-lg text-2xl text-white"
+            >
+              Deposit
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
