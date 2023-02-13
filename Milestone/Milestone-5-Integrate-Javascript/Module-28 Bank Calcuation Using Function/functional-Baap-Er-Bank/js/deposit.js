@@ -13,11 +13,13 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
   // calculate new deposit total
   const newDepositTotal = previousDepositTotal + newDepositAmount;
 
-  //set deposit Total
-  setTextElementByID("deposit-total", newDepositTotal);
-
   // get previous balance by using function
   const previousBalanceTotal = getElementValueByID("balance-total");
   const newBalanceTotal = previousBalanceTotal + newDepositAmount;
-  setTextElementByID("balance-total", newBalanceTotal);
+
+  if (!isNaN(newDepositTotal) && !isNaN(newBalanceTotal)) {
+    //set deposit Total
+    setTextElementByID("deposit-total", newDepositTotal);
+    setTextElementByID("balance-total", newBalanceTotal);
+  }
 });

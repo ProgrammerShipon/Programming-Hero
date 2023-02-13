@@ -27,7 +27,9 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
 
   // step-5:
   const newDepositTotal = totalDeposit + depositAmount;
-  depositTotalElement.innerText = newDepositTotal;
+  if (!isNaN(newDepositTotal)) {
+    depositTotalElement.innerText = newDepositTotal;
+  }
 
   // step-6:
   const totalBalanceElement = document.getElementById("balance-total");
@@ -35,5 +37,7 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
 
   // step-7:
   const newTotalBalance = preBalance + depositAmount;
-  totalBalanceElement.innerText = newTotalBalance;
+  if (!isNaN(newTotalBalance)) {
+    totalBalanceElement.innerText = newTotalBalance;
+  }
 });

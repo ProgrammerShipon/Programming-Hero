@@ -27,7 +27,9 @@ document.getElementById("btn-withdraw").addEventListener("click", function () {
 
   // step-5:
   const newWithdrawTotal = totalWithdraw + withdrawAmount;
-  withdrawTotalElement.innerText = newWithdrawTotal;
+  if (!isNaN(newWithdrawTotal)) {
+    withdrawTotalElement.innerText = newWithdrawTotal;
+  }
 
   // step-6:
   const totalBalanceElement = document.getElementById("balance-total");
@@ -35,5 +37,7 @@ document.getElementById("btn-withdraw").addEventListener("click", function () {
 
   // step-7:
   const newTotalBalance = preBalance - withdrawAmount;
-  totalBalanceElement.innerText = newTotalBalance;
+  if (!isNaN(newTotalBalance)) {
+    totalBalanceElement.innerText = newTotalBalance;
+  }
 });

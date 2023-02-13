@@ -13,8 +13,10 @@ document.getElementById("btn-withdraw").addEventListener("click", function () {
   const newWithdrawAmount = getInputFieldValueById("withdraw-field");
   const previousWithdrawTotal = getElementValueByID("withdraw-total");
   const newWithdrawTotal = previousWithdrawTotal + newWithdrawAmount;
-  setTextElementByID("withdraw-total", newWithdrawTotal);
   const previousBalanceTotal = getElementValueByID("balance-total");
   const newBalanceTotal = previousBalanceTotal - newWithdrawAmount;
-  setTextElementByID("balance-total", newBalanceTotal);
+  if (!isNaN(newWithdrawAmount) && !isNaN(newBalanceTotal)) {
+    setTextElementByID("withdraw-total", newWithdrawTotal);
+    setTextElementByID("balance-total", newBalanceTotal);
+  }
 });
