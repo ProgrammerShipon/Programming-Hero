@@ -37,16 +37,16 @@ function gemsToDiamond(friend1, friend2, friend3) {
     const friend2Diamond = 32 * friend2;
     const friend3Diamond = 43 * friend3;
 
-    let totalDiamond = friend1Diamond + friend2Diamond + friend3Diamond;
+    let totalDiamonds = friend1Diamond + friend2Diamond + friend3Diamond;
 
-    if (totalDiamond > 1000 * 2) {
-      return totalDiamond - 2000;
+    if (totalDiamonds > 1000 * 2) {
+      return totalDiamonds - 2000;
     }
 
-    return totalDiamond;
+    return totalDiamonds;
   } else {
     return "Please valid Data";
   }
 }
 
-console.log(gemsToDiamond(10, 6, 1001));
+console.log(gemsToDiamond(100, 5, 1));

@@ -34,5 +34,5 @@ function findingBadData(arrays) {
    }
 }
 
-const inputArr = [2, -5, -7, -13];
+const inputArr = [-4, -9, -5, -33, -55];
 console.log(findingBadData(inputArr));

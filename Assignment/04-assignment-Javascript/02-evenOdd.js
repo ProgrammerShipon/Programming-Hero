@@ -10,13 +10,13 @@ function evenOdd(str) {
   if (typeof str == "string") {
     let lengthStr = str.length;
     if (lengthStr % 2 == 0) {
-      return "even";
+      return "Even";
     } else {
-      return "odd";
+      return "Odd";
     }
   } else {
     return "Please Valid Data";
   }
 }
 
-console.log(evenOdd("Phero"));
+console.log(evenOdd("Programmer"));

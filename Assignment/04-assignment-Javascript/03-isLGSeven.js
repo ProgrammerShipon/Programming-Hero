@@ -28,4 +28,4 @@ function isLGSeven(number) {
     return "Please Valid Data";
   }
 }
-console.log(isLGSeven(6));
+console.log(isLGSeven(15));

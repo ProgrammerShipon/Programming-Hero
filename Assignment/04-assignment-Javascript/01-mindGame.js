@@ -18,14 +18,14 @@ Output: 49.5
 
  */
 
-// calculation method - ourValue ((8 * 3) + 10) 
-function mindGame(number) {
+// calculation method - ourValue ((8 * 3) + 10) / 2 - 5
+function mindGame(numbers) {
   // type and negative number check
-  if (typeof number == "number" && number > 0) {
-    return (number * 3 + 10) / 2 - 5;
+  if (typeof numbers === "number" && numbers > 0) {
+    return (numbers * 3 + 10) / 2 - 5;
   } else {
     return "Please Valid Data";
   }
 }
 
-console.log(mindGame(5));
+console.log(mindGame(-1));
