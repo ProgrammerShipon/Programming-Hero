@@ -33,11 +33,13 @@ document.getElementById("btn-withdraw").addEventListener("click", function () {
   // step-6: calculate current total balance
   const totalBalance = PreviousBalanceTotal - newWithdrawAmount;
 
-  // step-7: output
-  // set the deposit total
-  currentWithdrawElement.innerText = currentWithdrawTotal;
-  // set the Balance total
-  balanceTotalEle.innerText = totalBalance;
+  if (!isNaN(currentWithdrawTotal) && !isNaN(totalBalance)) {
+    // step-7: output
+    // set the deposit total
+    currentWithdrawElement.innerText = currentWithdrawTotal;
+    // set the Balance total
+    balanceTotalEle.innerText = totalBalance;
+  }
 
   // step-8: clear the deposit field
   withdrawField.value = "";

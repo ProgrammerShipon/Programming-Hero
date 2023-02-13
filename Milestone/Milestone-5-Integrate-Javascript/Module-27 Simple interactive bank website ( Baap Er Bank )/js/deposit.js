@@ -21,12 +21,14 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
   // step-6: calculate current total balance
   const totalBalance = newDepositAmount + PreviousBalanceTotal;
 
-  // step-7: output
-  // set the deposit total
-  depositElement.innerText = currentDepositTotal;
-  // set the Balance total
-  balanceTotalEle.innerText = totalBalance;
-
   // step-8: clear the deposit field
   depositField.value = "";
+
+  if (!isNaN(currentDepositTotal) && !isNaN(totalBalance)) {
+    // step-7: output
+    // set the deposit total
+    depositElement.innerText = currentDepositTotal;
+    // set the Balance total
+    balanceTotalEle.innerText = totalBalance;
+  }
 });
