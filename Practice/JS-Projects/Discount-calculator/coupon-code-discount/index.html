@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Fixed Discount</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  </head>
+  <body>
+    <main>
+      <section class="flex justify-center items-center h-screen">
+        <div class="bg-indigo-500 leading-9 p-4 rounded-lg">
+          <h1 class="text-center text-2xl text-white mb-5">Discount Offer</h1>
+          <div class="mb-3">
+            <span>Value : </span>
+            <input id="input-value" type="number" class="px-3 py-1" />
+          </div>
+          <div>
+            <span> Cupon code : </span>
+            <input
+              id="cupon-code"
+              type="text"
+              placeholder="Provide Your Cupon Code"
+              class="px-3 py-1"
+            />
+          </div>
+          <div>
+            <span> your value : </span>
+            <span id="yourValue">00</span>
+          </div>
+          <div>
+            <span> Discount : </span>
+            <span id="discount">00%</span>
+          </div>
+          <div>
+            <span> Value : </span>
+            <span id="show-value">00</span>
+          </div>
+          <button id="btn-discount" class="bg-yellow-500 px-7 py-1 rounded-lg">
+            Discount Now
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
