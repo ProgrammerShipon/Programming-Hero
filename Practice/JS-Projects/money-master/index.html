@@ -29,6 +29,7 @@
                   >
                     <span class="capitalize text-right w-full"> Income : </span>
                     <input
+                      id="income"
                       type="number"
                       class="appearance-none border border-slate-400 outline-none px-4 rounded w-full"
                       placeholder="10000"
@@ -44,6 +45,7 @@
                   >
                     <span class="capitalize text-right w-full"> Food : </span>
                     <input
+                      id="food"
                       type="number"
                       class="appearance-none border border-slate-400 outline-none px-4 rounded w-full"
                       placeholder="3000"
@@ -55,6 +57,7 @@
                   >
                     <span class="capitalize text-right w-full"> Rent : </span>
                     <input
+                      id="rent"
                       type="number"
                       class="appearance-none border border-slate-400 outline-none px-4 rounded w-full"
                       placeholder="2000"
@@ -68,6 +71,7 @@
                       clothes :
                     </span>
                     <input
+                      id="clothes"
                       type="number"
                       class="appearance-none border border-slate-400 outline-none px-4 rounded w-full"
                       placeholder="500"
@@ -75,6 +79,7 @@
                   </div>
 
                   <button
+                    id="calculate"
                     class="bg-[#59A5FF] mb-6 px-6 py-3 rounded shadow text-white text-xl"
                   >
                     Calculate
@@ -82,13 +87,13 @@
 
                   <div class="mb-6">
                     <div class="capitalize flex gap-8 justify-center text-xl">
-                      <p>total expenses:</p>
-                      <p>5500</p>
+                      <p>total expenses :</p>
+                      <p id="show-expense">5500</p>
                     </div>
 
                     <div class="capitalize flex gap-8 justify-center text-xl">
                       <p>Balance:</p>
-                      <p>4500</p>
+                      <p id="show-balance">4500</p>
                     </div>
                   </div>
 
@@ -97,12 +102,14 @@
                   >
                     <span> save : </span>
                     <input
+                      id="saving-value"
                       type="number"
                       class="appearance-none border border-slate-400 outline-none px-4 rounded"
                       placeholder="20"
                     />
                     <span> % </span>
                     <button
+                      id="btn-saving"
                       class="bg-[#59A5FF] px-6 py-3 rounded shadow text-white text-xl"
                     >
                       save
@@ -111,13 +118,13 @@
 
                   <div>
                     <div class="capitalize flex gap-8 justify-center text-xl">
-                      <p>total expenses:</p>
-                      <p>2000</p>
+                      <p>saving amount :</p>
+                      <p id="show-saving">2000</p>
                     </div>
 
                     <div class="capitalize flex gap-8 justify-center text-xl">
-                      <p>Balance:</p>
-                      <p>2500</p>
+                      <p>remaining balance :</p>
+                      <p id="show-remaining">2500</p>
                     </div>
                   </div>
                 </div>
@@ -127,5 +134,19 @@
         </div>
       </section>
     </main>
+
+    <!-- toast message -->
+    <div class="container">
+      <div
+        id="open-toast"
+        class="bg-red-400 bottom-10 duration-800 ease-in-out fixed inline-block px-8 py-3 right-10 rounded-lg text-white translate-x-[20rem] transition"
+      >
+        <div>
+          <span>invalid your value.</span>
+        </div>
+      </div>
+    </div>
+    <script src="./js/common.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
