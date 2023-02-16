@@ -5,26 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header></header>
     <main>
-      <section>
+      <section class="container mx-auto py-8">
         <div>
-          <h1>Money Master 💰</h1>
+          <h1 class="py-8 text-4xl text-[#31A5AC] text-center">
+            Money Master 💰
+          </h1>
         </div>
-        <div>
-          <div class="flex">
-            <div>
+        <div class="">
+          <div class="flex gap-12">
+            <div class="w-full">
               <img src="./img/Pexels Photo.png" alt="Money Make" />
             </div>
-            <div>
-              <div>
+            <div class="bg-[#F8F8F8] p-8 w-full">
+              <div class="text-center">
                 <div>
-                  <h2>income</h2>
+                  <h2 class="capitalize font-bold mb-5 text-3xl">income</h2>
+                  <div
+                    class="flex gap-4 items-center justify-center mb-6 mx-auto text-2xl w-10/12"
+                  >
+                    <span class="capitalize text-right w-full"> Income : </span>
+                    <input
+                      type="number"
+                      class="appearance-none border border-slate-400 outline-none px-4 rounded w-full"
+                      placeholder="10000"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="capitalize font-bold mb-5 text-3xl">expenses</h2>
+
+                  <div
+                    class="flex gap-4 items-center justify-center mb-6 mx-auto text-2xl w-10/12"
+                  >
+                    <span class="capitalize text-right w-full"> Food : </span>
+                    <input
+                      type="number"
+                      class="appearance-none border border-slate-400 outline-none px-4 rounded w-full"
+                      placeholder="3000"
+                    />
+                  </div>
+
+                  <div
+                    class="flex gap-4 items-center justify-center mb-6 mx-auto text-2xl w-10/12"
+                  >
+                    <span class="capitalize text-right w-full"> Rent : </span>
+                    <input
+                      type="number"
+                      class="appearance-none border border-slate-400 outline-none px-4 rounded w-full"
+                      placeholder="2000"
+                    />
+                  </div>
+
+                  <div
+                    class="flex gap-4 items-center justify-center mb-6 mx-auto text-2xl w-10/12"
+                  >
+                    <span class="capitalize text-right w-full">
+                      clothes :
+                    </span>
+                    <input
+                      type="number"
+                      class="appearance-none border border-slate-400 outline-none px-4 rounded w-full"
+                      placeholder="500"
+                    />
+                  </div>
+
+                  <button
+                    class="bg-[#59A5FF] mb-6 px-6 py-3 rounded shadow text-white text-xl"
+                  >
+                    Calculate
+                  </button>
+
+                  <div class="mb-6">
+                    <div class="capitalize flex gap-8 justify-center text-xl">
+                      <p>total expenses:</p>
+                      <p>5500</p>
+                    </div>
+
+                    <div class="capitalize flex gap-8 justify-center text-xl">
+                      <p>Balance:</p>
+                      <p>4500</p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="capitalize mb-6 flex gap-8 items-center justify-center text-xl"
+                  >
+                    <span> save : </span>
+                    <input
+                      type="number"
+                      class="appearance-none border border-slate-400 outline-none px-4 rounded"
+                      placeholder="20"
+                    />
+                    <span> % </span>
+                    <button
+                      class="bg-[#59A5FF] px-6 py-3 rounded shadow text-white text-xl"
+                    >
+                      save
+                    </button>
+                  </div>
+
                   <div>
-                    <span> Income : </span>
-                    <input type="number" />
+                    <div class="capitalize flex gap-8 justify-center text-xl">
+                      <p>total expenses:</p>
+                      <p>2000</p>
+                    </div>
+
+                    <div class="capitalize flex gap-8 justify-center text-xl">
+                      <p>Balance:</p>
+                      <p>2500</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -35,8 +129,3 @@
     </main>
   </body>
 </html>
-<!-- <img
-              class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-              src="/docs/images/blog/image-4.jpg"
-              alt=""
-            /> -->
