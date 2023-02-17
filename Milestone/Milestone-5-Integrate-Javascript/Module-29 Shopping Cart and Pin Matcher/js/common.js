@@ -7,10 +7,20 @@
  *
  */
 
+function getTagValue(ID) {
+  const element = document.getElementById(ID);
+  const eleValue = parseInt(element.innerText);
+  return eleValue;
+}
+
+function getInputValue(ID) {
+  const input = document.getElementById(ID);
+  const inpValue = parseInt(input.innerText);
+  return inpValue;
+}
+
 function updateCaseNumber(inIncrease, changeValue) {
-  const caseNumberField = document.getElementById(changeValue);
-  const caseNumberStr = caseNumberField.value;
-  const previousCaseNumber = parseInt(caseNumberStr);
+  const previousCaseNumber = getTagValue(changeValue);
 
   let newCaseNumber;
 
