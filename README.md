@@ -2,7 +2,8 @@
 
 ## Practice Live Projects
 
-- [01-Donate-today](https://programmershipon.github.io/donate-today/)
+- [Donate-today](https://programmershipon.github.io/donate-today/)
+- [Influencer-Products](https://programmershipon.github.io/Influencer-Products/)
 
 <br>
 <br>
@@ -10,6 +11,10 @@
 ## Assignment Live Project
 
 - [01-New-year-New-me](https://programmershipon.github.io/Happy-New-Year/)
+
+<br>
+
+- [Simple-Quiz-App](https://programmershipon.github.io/Simple-Quiz-App/)
 
 <br>
 <br>
