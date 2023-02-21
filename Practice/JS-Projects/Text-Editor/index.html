@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dracula">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <style>
+      ul li {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="flex h-screen items-center justify-center">
+          <div
+            class="artboard artboard-horizontal bg-sky-300 box-shadow overflow-hidden phone-3 rounded-box shadow-2xl"
+          >
+            <div class="flex items-center justify-around p-3">
+              <ul class="flex gap-4 justify-center text-xl w-full">
+                <li id="bold"><i class="fa-solid fa-bold"></i></li>
+                <li id="italic"><i class="fa-solid fa-italic"></i></li>
+                <li id="underline"><i class="fa-solid fa-underline"></i></li>
+              </ul>
+              <ul class="flex gap-4 justify-center text-xl w-full">
+                <li><i class="fa-solid fa-align-left"></i></li>
+                <li><i class="fa-solid fa-align-center"></i></li>
+                <li><i class="fa-solid fa-align-justify"></i></li>
+                <li><i class="fa-solid fa-align-right"></i></li>
+              </ul>
+              <ul class="flex gap-4 justify-center text-xl w-full">
+                <li><input type="number" /></li>
+                <li><i class="fa-solid fa-font"></i></li>
+                <li><input type="color" id="" /></li>
+              </ul>
+            </div>
+            <textarea
+              id="borad"
+              class="focus:outline-none h-full p-4 w-full"
+              spellcheck="true"
+              placeholder="Type here..."
+            ></textarea>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
