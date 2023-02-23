@@ -17,8 +17,12 @@
     />
 
     <style>
+      * {
+        transition: 0.5s;
+      }
       ul li {
         cursor: pointer;
+        padding: 0.3em 0.4em;
       }
     </style>
   </head>
@@ -29,33 +33,50 @@
           <div
             class="artboard artboard-horizontal bg-sky-300 box-shadow overflow-hidden phone-3 rounded-box shadow-2xl"
           >
-            <div class="flex items-center justify-around p-3">
-              <ul class="flex gap-4 justify-center text-xl w-full">
+            <div class="flex items-center justify-around p-1">
+              <ul class="flex justify-center text-xl w-full">
                 <li id="bold"><i class="fa-solid fa-bold"></i></li>
                 <li id="italic"><i class="fa-solid fa-italic"></i></li>
                 <li id="underline"><i class="fa-solid fa-underline"></i></li>
               </ul>
-              <ul class="flex gap-4 justify-center text-xl w-full">
-                <li><i class="fa-solid fa-align-left"></i></li>
-                <li><i class="fa-solid fa-align-center"></i></li>
-                <li><i class="fa-solid fa-align-justify"></i></li>
-                <li><i class="fa-solid fa-align-right"></i></li>
+              <ul class="flex justify-center text-xl w-full">
+                <li id="align-left"><i class="fa-solid fa-align-left"></i></li>
+                <li id="align-center">
+                  <i class="fa-solid fa-align-center"></i>
+                </li>
+                <li id="align-justify">
+                  <i class="fa-solid fa-align-justify"></i>
+                </li>
+                <li id="align-right">
+                  <i class="fa-solid fa-align-right"></i>
+                </li>
               </ul>
-              <ul class="flex gap-4 justify-center text-xl w-full">
-                <li><input type="number" /></li>
-                <li><i class="fa-solid fa-font"></i></li>
-                <li><input type="color" id="" /></li>
+              <ul class="flex justify-center text-xl w-full">
+                <li>
+                  <input
+                    id="font-size"
+                    type="number"
+                    class="focus:outline-none px-2 py-1 rounded-lg w-16"
+                  />
+                </li>
+                <li id="text-decrement">
+                  <i class="fa-solid fa-font text-sm"></i>
+                </li>
+                <li id="text-increment"><i class="fa-solid fa-font"></i></li>
+                <li><input type="color" id="text-colors" /></li>
               </ul>
             </div>
             <textarea
               id="borad"
               class="focus:outline-none h-full p-4 w-full"
-              spellcheck="true"
+              spellcheck="false"
               placeholder="Type here..."
             ></textarea>
           </div>
         </div>
       </section>
     </main>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>
