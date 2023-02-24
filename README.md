@@ -19,6 +19,15 @@
 <br>
 <br>
 
+## Module Live Project :
+
+<br>
+
+- [Meals](https://mealsph.netlify.app/)
+
+<br>
+<br>
+
 ## Session Live Project
 
 - [Shopping-With-JS](https://shopping-with-js-practice.surge.sh/)
