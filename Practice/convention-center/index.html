@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abacus Convention Center</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      a {
+        color: #3e3e3e;
+      }
+
+      .navbar-brand {
+        color: #3e3e3e;
+      }
+
+      .Our-package ul li {
+        list-style-image: url("./img/icons/check-circle-1.png");
+      }
+
+      .Our-package h3,
+      .Our-package h2 {
+        color: #231d4f;
+      }
+
+      .Our-package p {
+        color: #848199;
+      }
+
+      .Our-package button {
+        background: #f496d242;
+      }
+
+      .carousel-caption.d-none.d-md-block {
+        background: #33333375;
+        width: max-content;
+        margin: 0 auto;
+        padding: 20px 35px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Abacus Convention Center</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav ms-auto mb-lg-0 text-capitalize">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Subscribe</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <section class="header-banner">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./img/images/banner-1.png"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+                <button class="btn btn-light text-primary mb-4">
+                  Book Now
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/images/banner-2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+                <button class="btn btn-light text-primary mb-4">
+                  Book Now
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/images/banner-3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+                <button class="btn btn-light text-primary mb-4">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section> -->
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/images/banner-1.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/images/banner-2.jpg" class="d-block w-100" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/images/banner-3.jpg" class="d-block w-100" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Precious start -->
+      <section class="precious-container py-5 mt-5">
+        <div class="container">
+          <div class="card mb-3 border-0">
+            <div class="row g-5 align-items-center">
+              <div class="col-md-5">
+                <img
+                  src="./img/images/wedding.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title h1">Every moment is Precious</h5>
+                  <p class="card-text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                  <p class="card-text">
+                    <button class="btn btn-primary">
+                      Explore our album
+                      <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Precious end -->
+
+      <!-- Our Package start -->
+      <section class="Our-package py-5">
+        <div class="container">
+          <h2 class="h1 text-center py-5">Our Package</h2>
+          <div class="row">
+            <div class="col p-2">
+              <h3 class="py-1">$300</h3>
+              <h2 class="py-2">Business fair</h2>
+              <p>for most businesses event like book fair , craft fair</p>
+              <ul>
+                <li>limited space access</li>
+                <li>secuirty facility</li>
+                <li>decoration design</li>
+                <li>event support</li>
+                <li>per day bill</li>
+              </ul>
+              <button class="btn" style="color: #3f87f5">Choose plan</button>
+            </div>
+            <div class="col p-2">
+              <h3 class="py-1">$500</h3>
+              <h2 class="py-2">wedding basic</h2>
+              <p>for weddings with basic plan and limited item</p>
+              <ul>
+                <li>Full space access</li>
+                <li>food arrangement</li>
+                <li>mangement support</li>
+                <li>Decoration design</li>
+                <li>Billed as shift</li>
+              </ul>
+              <button class="btn" style="color: #3f87f5">Choose plan</button>
+            </div>
+            <div class="col p-2">
+              <h3 class="py-1">$800</h3>
+              <h2 class="py-2">Wedding plus</h2>
+              <p>For most weddings with premium plans</p>
+              <ul>
+                <li>Full space access</li>
+                <li>Dedicated team</li>
+                <li>Buffet food</li>
+                <li>premium Decoration</li>
+                <li>Pay as plan</li>
+              </ul>
+              <button class="btn" style="color: #3f87f5">Choose plan</button>
+            </div>
+            <div class="col p-2">
+              <h3 class="py-1">$1200</h3>
+              <h2 class="py-2">Corporate event</h2>
+              <p>For most corporate business events</p>
+              <ul>
+                <li>Full space access</li>
+                <li>dedicated team</li>
+                <li>Buffet food</li>
+                <li>premium Decoration</li>
+                <li>pay as plan</li>
+              </ul>
+              <button class="btn px-5" style="color: #3f87f5">
+                Choose plan
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Package end -->
+
+      <!-- Happy Clint start -->
+      <section class="happy-clint py-5 my-5">
+        <div class="container">
+          <h2 class="text-center py-2">Happy Clients Says</h2>
+          <div class="row mt-5 gap-5 justify-content-center text-center">
+            <div
+              class="col p-3 rounded"
+              style="box-shadow: 0px 0px 10px #9e9e9e80"
+            >
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <img src="./img/images/person 1.png" alt="" />
+              <h1 class="h3">Regina Miles</h1>
+              <p>Banker</p>
+            </div>
+            <div
+              class="col p-3 rounded"
+              style="box-shadow: 0px 0px 10px #9e9e9e80"
+            >
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <img src="./img/images/person 2.png" alt="" />
+              <h1 class="h3">Regina Miles</h1>
+              <p>Banker</p>
+            </div>
+            <div
+              class="col p-3 rounded"
+              style="box-shadow: 0px 0px 10px #9e9e9e80"
+            >
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <img src="./img/images/person 3.png" alt="" />
+              <h1 class="h3">Regina Miles</h1>
+              <p>Banker</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Happy Clint end -->
+
+      <!-- Frequently Asked Questions start -->
+      <section class="frequently-section mb-5">
+        <div class="container">
+          <h2 class="h1 text-center mb-5">Frequently Asked Questions</h2>
+          <div class="row g-4">
+            <div class="col-6">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      What’s the difference between event design and event
+                      planning?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Event design and event planning work hand in hand to
+                      deliver a successful event.Events by Knight offer tailor
+                      made events. This means we incorporate both event design
+                      and event planning to create that perfect event.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      How early do we need to start planning an event
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the second item's accordion body. Let's imagine
+                      this being filled with some actual content.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
+                      What is your refund and cancellation policy?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFour"
+                    >
+                      How do you keep budgets on track?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <img src="./img/images/people.png" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Frequently Asked Questions end -->
+    </main>
+
+    <footer class="py-5 mt-5" style="background: #0b0d17; color: #d9dbe1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6"><p>&copy;2023 bike. All rights reserved</p></div>
+          <div class="col-6">
+            <div
+              class="getApp text-end d-flex flex-column justify-content-end align-items-end gap-4"
+            >
+              <h5>Get the app</h5>
+              <img src="./img/icons/apple.png" alt="" />
+              <img src="./img/icons/googlePlay.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
