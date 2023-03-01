@@ -1,0 +1,33 @@
+
+Shape kachakachi rakhar cesta korte hobe ,
+ei 6 ta shape e use korte hobe, 
+
+
+1. clicking 
+2. header button clicked open other website or 
+
+Bonus mark :
+minimum 8 commit ,
+Meaning Full name and comment
+ 
+Area Serial Number
+minimum 2 function 2 use
+random color genaret background color
+hover color difference
+
+
+Optional : 
+list close btn
+
+course Live link: 
+https://geometry-genius.surge.sh/
+
+My Question :
+Should editing options be brought everywhere? --  as your wish
+
+
+submit : 
+Repo: 
+https://github.com/programming-hero-web-course2/b7a5-geometry-genius-assignment-ProgrammerShipon.git
+Live Link : 
+geometry-Shipon.surge.sh
