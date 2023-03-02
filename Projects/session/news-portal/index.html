@@ -19,7 +19,7 @@
     ></script>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body class="" style="background-color: #e3dfdf" onload="fetchCategories()">
+  <body style="background-color: #e3dfdf" onload="fetchCategories()">
     <header class="container-fluid m-0 p-0">
       <!-- Navbar goes here -->
       <nav class="navbar navbar-expand-lg bg-transparent">
@@ -55,13 +55,13 @@
       <hr class="container" />
       <!-- News Categories section starts-->
       <section
-        class="container categories-container d-flex justify-content-between"
         id="categories-container"
+        class="container categories-container d-flex justify-content-between"
       ></section>
       <!-- News Categories section ends -->
     </header>
 
-    <!-- mian section starts -->
+    <!-- main section starts -->
     <main>
       <!-- Alert section starts-->
       <section class="container mt-4">
@@ -83,45 +83,37 @@
               aria-label="Floating label select example"
             >
               <option selected>Default</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option value="1">top visitors</option>
+              <option value="2">Data</option>
+              <option value="3">Name</option>
             </select>
           </div>
         </div>
         <div class="d-flex gap-2">
-          <button class="btn btn-primary" onclick="showTodaysPick()">Todays pick</button>
-          <button class="btn btn-outline-secondary" onclick="showTrending()">Trending</button>
+          <button class="btn btn-primary" onclick="showTodaysPick()">
+            Todays pick
+          </button>
+          <button class="btn btn-outline-secondary" onclick="showTrending()">
+            Trending
+          </button>
         </div>
       </section>
       <!-- sorting options section ends -->
 
       <section class="all-news container mb-4" id="all-news"></section>
 
-      <!-- Modal body goes here -->
-      <!-- Button trigger modal -->
-      <!-- <button
-        type="button"
-        class="btn btn-primary"
-        
-      >
-        Launch demo modal
-      </button> -->
-
-      <!-- Modal -->
+      <!-- Modal start -->
       <div
         class="modal fade"
-        id="exampleModal"
+        id="newDetails"
         tabindex="-1"
-        aria-labelledby="exampleModalLabel"
+        aria-labelledby="newDetailsLabel"
         aria-hidden="true"
       >
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Modal title
-              </h1>
+              <h1 class="modal-title fs-5" id="newDetailsLabel">Modal title</h1>
               <button
                 type="button"
                 class="btn-close"
@@ -138,16 +130,13 @@
               >
                 Close
               </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
             </div>
           </div>
         </div>
       </div>
       <!-- Modal ends -->
     </main>
-    <!-- mian section ends -->
+    <!-- main section ends -->
 
     <!-- Bootstrap script goes here -->
     <script
@@ -155,7 +144,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <!-- Cutom JS goes here -->
+    <!-- Custom JS goes here -->
     <script src="./scripts/news-portal.js"></script>
   </body>
 </html>
