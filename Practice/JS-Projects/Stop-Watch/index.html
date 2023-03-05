@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="bg-[#276edc] flex h-screen items-center justify-center">
+      <div>
+        <h1 class="bg-white mb-5 px-6 py-2 rounded shadow text-2xl">
+          Simple Stop Watch using Javascript
+        </h1>
+        <div class="bg-white p-6 rounded shadow">
+          <div class="flex gap-3 justify-around mb-5 text-center text-xl">
+            <p id="hour" class="bg-blue-200 py-2 text-blue-600 w-full text-2xl">
+              00
+            </p>
+            <p
+              id="minutes"
+              class="bg-blue-200 py-2 text-blue-600 w-full text-2xl"
+            >
+              00
+            </p>
+            <p
+              id="seconds"
+              class="bg-blue-200 py-2 text-blue-600 w-full text-2xl"
+            >
+              00
+            </p>
+            <p
+              id="milliseconds"
+              class="bg-blue-200 py-2 text-blue-600 w-full text-2xl"
+            >
+              000
+            </p>
+          </div>
+          <div class="flex gap-3">
+            <button
+              onclick="start()"
+              class="bg-[#28569ee0] hover:opacity-80 py-2 rounded shadow text-2xl text-white transition w-full"
+            >
+              Start
+            </button>
+            <button
+              onclick="stops()"
+              class="bg-[#ac791b] hover:opacity-80 py-2 rounded shadow text-2xl text-white transition w-full"
+            >
+              Stop
+            </button>
+            <button
+              onclick="resets()"
+              class="bg-[#ac791b] hover:opacity-80 py-2 rounded shadow text-2xl text-white transition w-full"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
