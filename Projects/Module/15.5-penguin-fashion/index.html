@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penguin Fashon</title>
+
+    <!-- Bebas Neue fonts -->
+    <!-- font-family: 'Bebas Neue', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Roboto Fonts -->
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind Css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            BebasNeue: ['"Bebas Neue"', "cursive"],
+            Roboto: ['"Roboto"', "sans-serif"],
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-Roboto p-4">
+    <header class="">
+      <!-- navbar start -->
+      <nav class="">
+        <div
+          class="container flex lg:flex-row flex-col items-center justify-between mx-auto py-6"
+        >
+          <div>
+            <figure class="w-80">
+              <img src="./images/logo.png" alt="" class="w-full" />
+            </figure>
+          </div>
+          <div>
+            <ul class="flex flex-wrap gap-3 text-2xl">
+              <li class="px-2 py-3 cursor-pointer">Home</li>
+              <li class="px-2 py-3 cursor-pointer">Product</li>
+              <li class="px-2 py-3 cursor-pointer">About Us</li>
+              <li class="px-2 py-3 cursor-pointer">Contact Us</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <!-- banner start -->
+      <section class="md:text-auto text-center">
+        <div class="container md:flex items-center mx-auto py-7 md:py-14">
+          <div class="w-full">
+            <h1 class="text-5xl md:text-7xl font-semibold uppercase">
+              <span class="text-amber-400">Be the Penguin</span><br />
+              of Winter
+            </h1>
+            <p class="py-8">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
+              tempora itaque eum nostrum alias? Asperiores voluptatibus dolores
+              vero? Ratione voluptatem voluptate commodi consequatur cum,
+              voluptatibus perferendis quas dicta obcaecati. Non?
+            </p>
+            <button
+              class="text-white py-4 px-8 uppercase bg-gradient-to-r from-[#a4bc46] to-[#85a019] rounded-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                ></path>
+              </svg>
+
+              Buy Now
+            </button>
+          </div>
+          <div class="py-6 w-full">
+            <img src="./images/model.png" alt="" class="ml-auto" />
+          </div>
+        </div>
+      </section>
+      <!-- banner end -->
+    </header>
+
+    <main>
+      <!-- Woman Jacket Start -->
+      <section>
+        <div class="container mx-auto py-14">
+          <h1
+            class="tracking-widest font-semibold my-6 pl-4 text-3xl font-BebasNeue"
+          >
+            Woman Jacket
+          </h1>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-around"
+          >
+            <div>
+              <div class="p-4 rounded-lg hover:shadow-xl shadow-lg">
+                <figure class="bg-[#F1F1F1] p-8 rounded-xl">
+                  <img
+                    src="./images/jacket-1.png"
+                    alt=""
+                    class="mx-auto w-10/12"
+                  />
+                </figure>
+                <div>
+                  <h1 class="font-semibold my-4 text-2xl">
+                    Yellow Coat Jacket
+                  </h1>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur blanditiis earum adipisci saepe velit. A.
+                  </p>
+                  <div class="flex items-center justify-between mt-6">
+                    <h3 class="font-bold text-2xl text-[#FABE4C]">$234</h3>
+                    <button
+                      class="text-white py-4 px-8 uppercase bg-gradient-to-r from-[#a4bc46] to-[#85a019] rounded-lg"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 inline"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                        ></path>
+                      </svg>
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="p-4 rounded-lg hover:shadow-xl shadow-lg">
+                <figure class="bg-[#F1F1F1] p-8 rounded-xl">
+                  <img
+                    src="./images/jacket-2.png"
+                    alt=""
+                    class="mx-auto w-10/12"
+                  />
+                </figure>
+                <div>
+                  <h1 class="font-semibold my-4 text-2xl">Ladies Jacket</h1>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur blanditiis earum adipisci saepe velit. A.
+                  </p>
+                  <div class="flex items-center justify-between mt-6">
+                    <h3 class="font-bold text-2xl text-[#FABE4C]">$534</h3>
+                    <button
+                      class="text-white py-4 px-8 uppercase bg-gradient-to-r from-[#a4bc46] to-[#85a019] rounded-lg"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 inline"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                        ></path>
+                      </svg>
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="p-4 rounded-lg hover:shadow-xl shadow-lg">
+                <figure class="bg-[#F1F1F1] p-8 rounded-xl">
+                  <img
+                    src="./images/jacket-3.png"
+                    alt=""
+                    class="mx-auto w-10/12"
+                  />
+                </figure>
+                <div>
+                  <h1 class="font-semibold my-4 text-2xl">
+                    Woman Leather Jacket
+                  </h1>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur blanditiis earum adipisci saepe velit. A.
+                  </p>
+                  <div class="flex items-center justify-between mt-6">
+                    <h3 class="font-bold text-2xl text-[#FABE4C]">$234</h3>
+                    <button
+                      class="text-white py-4 px-8 uppercase bg-gradient-to-r from-[#a4bc46] to-[#85a019] rounded-lg"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 inline"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                        ></path>
+                      </svg>
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Woman Jacket end -->
+
+      <!-- Man Jacket Start -->
+      <section>
+        <div class="container mx-auto py-14">
+          <h1
+            class="tracking-widest font-semibold my-6 pl-4 text-3xl font-BebasNeue"
+          >
+            Man Jacket
+          </h1>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-around"
+          >
+            <div>
+              <div class="p-4 rounded-lg hover:shadow-xl shadow-lg">
+                <figure class="bg-[#F1F1F1] p-8 rounded-xl">
+                  <img
+                    src="./images/jacket-4.png"
+                    alt=""
+                    class="mx-auto w-10/12"
+                  />
+                </figure>
+                <div>
+                  <h1 class="font-semibold my-4 text-2xl">
+                    Snowboard Jacket Mens
+                  </h1>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur blanditiis earum adipisci saepe velit. A.
+                  </p>
+                  <div class="flex items-center justify-between mt-6">
+                    <h3 class="font-bold text-2xl text-[#FABE4C]">$342</h3>
+                    <button
+                      class="text-white py-4 px-8 uppercase bg-gradient-to-r from-[#a4bc46] to-[#85a019] rounded-lg"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 inline"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                        ></path>
+                      </svg>
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="p-4 rounded-lg hover:shadow-xl shadow-lg">
+                <figure class="bg-[#F1F1F1] p-8 rounded-xl">
+                  <img
+                    src="./images/jacket-5.png"
+                    alt=""
+                    class="mx-auto w-10/12"
+                  />
+                </figure>
+                <div>
+                  <h1 class="font-semibold my-4 text-2xl">
+                    Man Leather Jackets
+                  </h1>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur blanditiis earum adipisci saepe velit. A.
+                  </p>
+                  <div class="flex items-center justify-between mt-6">
+                    <h3 class="font-bold text-2xl text-[#FABE4C]">$436</h3>
+                    <button
+                      class="text-white py-4 px-8 uppercase bg-gradient-to-r from-[#a4bc46] to-[#85a019] rounded-lg"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 inline"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                        ></path>
+                      </svg>
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="p-4 rounded-lg hover:shadow-xl shadow-lg">
+                <figure class="bg-[#F1F1F1] p-8 rounded-xl">
+                  <img
+                    src="./images/jacket-6.png"
+                    alt=""
+                    class="mx-auto w-10/12"
+                  />
+                </figure>
+                <div>
+                  <h1 class="font-semibold my-4 text-2xl">
+                    Man Casual Jackets
+                  </h1>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur blanditiis earum adipisci saepe velit. A.
+                  </p>
+                  <div class="flex items-center justify-between mt-6">
+                    <h3 class="font-bold text-2xl text-[#FABE4C]">$123</h3>
+                    <button
+                      class="text-white py-4 px-8 uppercase bg-gradient-to-r from-[#a4bc46] to-[#85a019] rounded-lg"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 inline"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                        ></path>
+                      </svg>
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Man Jacket end -->
+
+      <!-- Service start -->
+      <section>
+        <div class="container mx-auto">
+          <div class="lg:flex items-center justify-between">
+            <div class="gap-4 w-full lg:w-4/12">
+              <div>
+                <div
+                  class="flex gap-4 items-center mb-8 hover:shadow-xl shadow-lg rounded-lg p-3"
+                >
+                  <figure class="px-6 w-4/12">
+                    <img src="./images/house.png" alt="" />
+                  </figure>
+                  <div class="w-8/12">
+                    <h1 class="font-medium mb-1 text-2xl">
+                      Find the Perfect Fit
+                    </h1>
+                    <p class="text-sm">
+                      Everybody is different, which is why we offer styles for
+                      every body
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex gap-4 items-center mb-8 hover:shadow-xl shadow-lg rounded-lg p-3"
+                >
+                  <figure class="px-6 w-4/12">
+                    <img src="./images/house.png" alt="" />
+                  </figure>
+                  <div class="w-8/12">
+                    <h1 class="font-medium mb-1 text-2xl">
+                      Find the Perfect Fit
+                    </h1>
+                    <p class="text-sm">
+                      Everybody is different, which is why we offer styles for
+                      every body
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex gap-4 items-center mb-8 hover:shadow-xl shadow-lg rounded-lg p-3"
+                >
+                  <figure class="px-6 w-4/12">
+                    <img src="./images/house.png" alt="" />
+                  </figure>
+                  <div class="w-8/12">
+                    <h1 class="font-medium mb-1 text-2xl">
+                      Find the Perfect Fit
+                    </h1>
+                    <p class="text-sm">
+                      Everybody is different, which is why we offer styles for
+                      every body
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-8/12">
+              <figure>
+                <img src="./images/shopping.png" alt="" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service end -->
+    </main>
+  </body>
+</html>
