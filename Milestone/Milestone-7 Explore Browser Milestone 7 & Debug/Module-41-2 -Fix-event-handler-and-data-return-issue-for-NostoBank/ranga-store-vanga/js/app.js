@@ -121,26 +121,16 @@ const updateTotal = () => {
 // search by category
 document.getElementById("search-btn").addEventListener("click", function () {
   const inputField = document.getElementById("input-value").value;
-  console.log(inputField);
-  console.log(arr[0]);
-  // const searchedProduct = arr[0].filter((p) => {
-  //   p.title.indexOf(`'${inputField}'`);
-  //   console.log(p);
-  // });
 
-  const searchedProduct = arr[0].filter((num) => {
-    console.log(num);
-    // return num.title.includes(`'${inputField}'`);
-    for (const key in num) {
-      console.log(num[key].includes("laptops"));
-      console.log(key);
-      // if (num[key].includes(`${inputField}`)) {
-      //   // return num;
-      //   console.log(num[key]);
-      // }
-    }
+  // Searching Filtering
+  const searchedProduct = arr[0].filter((item) => {
+    return (
+      item.title.toLowerCase().includes(inputField.toLowerCase()) ||
+      item.description.toLowerCase().includes(inputField.toLowerCase())
+    );
   });
-  console.log(searchedProduct);
+
+  // Call Show Product Function
   showProducts(searchedProduct);
 });
 
