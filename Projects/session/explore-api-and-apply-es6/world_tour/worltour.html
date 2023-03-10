@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Have A Cool Tour Together</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="container">
+      <section>
+        <h1 class="text-center font-fold text-4xl my-12">
+          Welcome To Rest World
+        </h1>
+      </section>
+      <section
+        id="countries-info"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      ></section>
+      <div class="text-end lg:px-12">
+        <button onclick="showAllDataTogether()" class="btn btn-primary my-4">
+          See ALL
+        </button>
+      </div>
+      <div id="modal-info">
+        <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+      </div>
+    </main>
+
+    <script src="./worldtour.js"></script>
+  </body>
+</html>
