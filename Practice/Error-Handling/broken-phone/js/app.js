@@ -5,11 +5,9 @@ const loadPhones = async (searchText, dataLimit) => {
   const data = await res.json();
   displayPhones(data.data, dataLimit);
   phonesArr = data.data;
-  console.log(phonesArr);
 };
 
 const displayPhones = (phones, dataLimit) => {
-  console.log(phones);
   const phonesContainer = document.getElementById("phones-container");
   phonesContainer.innerHTML = "";
   // display 10 phones only
@@ -21,6 +19,9 @@ const displayPhones = (phones, dataLimit) => {
     showAll.classList.add("d-none");
   }
 
+  const showItems = document.getElementById("show-items");
+  showItems.innerText = phones.length;
+
   // display no phones found
   const noPhone = document.getElementById("no-found-message");
   if (phones.length === 0) {
@@ -28,8 +29,6 @@ const displayPhones = (phones, dataLimit) => {
   } else {
     noPhone.classList.add("d-none");
   }
-
-  console.log(phones[0]);
 
   // display all phones
   phones.forEach((phone) => {
@@ -119,4 +118,4 @@ const displayPhoneDetails = (phone) => {
     `;
 };
 
-loadPhones("apple");
+loadPhones("apple", 10);
