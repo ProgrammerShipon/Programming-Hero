@@ -1,0 +1,32 @@
+[
+   {
+     "id": 1,
+     "name": "Basic",
+     "price": 30,
+     "features": [
+       "Gym access",
+       "Limited classes"
+     ]
+   },
+   {
+     "id": 2,
+     "name": "Premium",
+     "price": 50,
+     "features": [
+       "Gym access",
+       "Unlimited classes",
+       "Personal training"
+     ]
+   },
+   {
+     "id": 3,
+     "name": "Elite",
+     "price": 80,
+     "features": [
+       "Gym access",
+       "Unlimited classes",
+       "Unlimited training",
+       "Nutrition consultations"
+     ]
+   }
+ ]
