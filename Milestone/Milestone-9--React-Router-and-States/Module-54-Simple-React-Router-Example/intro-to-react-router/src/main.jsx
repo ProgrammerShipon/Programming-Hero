@@ -13,7 +13,6 @@ import First from './components/First/First';
 import Frients from './components/Frients/Frients';
 import FriendDetail from './components/FriendDetail';
 import Posts from './components/Posts/Posts';
-import Post from './components/Post/Post';
 import PostDetails from './components/PostDetails/PostDetails';
 
 const router = createBrowserRouter([
@@ -63,7 +62,7 @@ const router = createBrowserRouter([
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  </>,
 )

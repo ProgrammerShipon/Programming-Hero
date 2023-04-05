@@ -3,6 +3,7 @@ import './Friend.css'
 import { Link } from 'react-router-dom';
 
 const Friend = ({ friend }) => {
+   console.log('Fri -> ', friend)
    const {email, name, id, phone} = friend
    return (
       <div className='friend'>

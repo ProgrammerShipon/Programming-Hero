@@ -1,19 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLoaderData } from 'react-router-dom';
 
 const FriendDetail = () => {
-   const friend = useLoaderData()
-   const { name, phone, email, website } = friend;
 
+   const friend = useLoaderData()
+   useEffect(() => {
+      console.log('its friend file --> ', friend)
+   }, [])
+
+   
+   
+   // const { name, phone, email, website } = friend;
    return ( 
       <div>
          <h1> This is a Friend Details </h1>
-         <div>
+         {/* <div>
             <h3>Name: {name} </h3>
             <p>Email: {email} </p>
             <p>Phone: {phone} </p>
             <p>Website: {website} </p>
-         </div>
+         </div> */}
       </div>
    );
 };
