@@ -1,0 +1,34 @@
+/**
+ *       Interview Questions
+ * 1. How is React routing different from conventional routing?
+ * 2. How do you implement React routing ?
+ * 3. What is the purpose of context API in react ?
+ * 4. Can you explain how the Provider works with the React context API?
+ * 5. What is a custom hook?
+ * 6. How many ways can we implement conditional rendering in React ? Explain the ways .
+ * 
+ * 
+ */
+
+/**
+ *       CUSTOM HOOK 
+ * A custom Hook has following features: 
+ *  # As a function, it takes input and returns output.
+ *  # Its name starts with use like useQuery, useMedia
+ *  # Unlike functional components, custom hooks can use other hooks such as useState, useRef... and other custom hooks
+ */
+
+/**
+ *    Why and When to USE React CUSTOM HOOKS?
+ * Completely separate logic from user interface.
+ * Reusable in many different components with the same processing logic Therefore, the logic only needs to be fixed in one place if it changes.
+ * When the logic is too long and complicated, we can write it in another file, so that the component is shorter and easier to read.
+ */
+
+
+
+
+Which one is not true?
+A. Conditional rendering in React works the same way conditions work in JavaScript.
+B. We can use JavaScript operators like if-else for conditional rendering in React.js.
+C. Conditional rendering means rendering all components at the same time.
