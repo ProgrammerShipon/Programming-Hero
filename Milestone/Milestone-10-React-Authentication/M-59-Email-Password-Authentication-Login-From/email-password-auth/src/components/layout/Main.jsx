@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Main = () => {
 	return (
-		<div className="d-flex justify-content-center align-items-center border-1">
+		<div className="main-container d-flex justify-content-center align-items-center border-1">
 			<div>
 				<Header />
 				<Outlet />
