@@ -1,0 +1,112 @@
+{
+   "jobs": [
+      {
+         "id": 1,
+         "company_logo": "https://img.freepik.com/free-vector/letter-d-illustration-gradient-colorful-style_341269-876.jpg?w=740&t=st=1681135051~exp=1681135651~hmac=74298b064bbf8a09306031cff8f7b2a14f3727ae74902ec7843a645d00ed0145",
+         "job_title": "Software Engineer",
+         "company_name": "ABC Company",
+         "remote_or_onsite": "Remote",
+         "location": "Any Location",
+         "fulltime_or_parttime": "Full-time",
+         "salary": "Competitive",
+         "job_description": "We are seeking a skilled software engineer to join our team...",
+         "job_responsibility": "Develop and maintain high-quality software...",
+         "educational_requirements": "Bachelor's degree in Computer Science or related field",
+         "experiences": "3+ years of professional software development experience",
+         "contact_information": {
+            "phone": "+1-123-456-7890",
+            "email": "hr@abccompany.com"
+         }
+      },
+      {
+         "id": 2,
+         "company_logo": "https://img.freepik.com/free-vector/gradient-az-za-logo-template_23-2149239306.jpg?w=740&t=st=1681135152~exp=1681135752~hmac=043440bde65dc1ab4af9ea99c383c15ae95443f1f4af1ccc6b2b27fbfd0f2815",
+         "job_title": "Marketing Specialist",
+         "company_name": "XYZ Corporation",
+         "remote_or_onsite": "Onsite",
+         "location": "New York City",
+         "fulltime_or_parttime": "Full-time",
+         "salary": "70,000 - 90,000 USD per year",
+         "job_description": "We are seeking a Marketing Specialist to join our team...",
+         "job_responsibility": "Develop and execute marketing campaigns...",
+         "educational_requirements": "Bachelor's degree in Marketing or related field",
+         "experiences": "2+ years of experience in marketing",
+         "contact_information": {
+            "phone": "+1-555-123-4567",
+            "email": "careers@xyzcorp.com"
+         }
+      },
+      {
+         "id": 3,
+         "company_logo": "https://img.freepik.com/free-vector/gradient-ac-logo-design_23-2149488228.jpg?w=740&t=st=1681135233~exp=1681135833~hmac=3d4b3b70a876c06a6333d0ae7eeacd40f5ee229f9e9140ce67e29bef17af27f7",
+         "job_title": "Data Analyst",
+         "company_name": "Acme Inc.",
+         "remote_or_onsite": "Remote",
+         "location": "Any Location",
+         "fulltime_or_parttime": "Part-time",
+         "salary": "Hourly rate based on experience",
+         "job_description": "We are seeking a Data Analyst to join our team...",
+         "job_responsibility": "Analyze and interpret data...",
+         "educational_requirements": "Bachelor's degree in Statistics or related field",
+         "experiences": "2+ years of experience in data analysis",
+         "contact_information": {
+            "phone": "+1-800-555-1212",
+            "email": "jobs@acmeinc.com"
+         }
+      },
+      {
+         "id": 4,
+         "company_logo": "https://img.freepik.com/free-vector/gradient-go-logo-template_52683-65769.jpg?w=740&t=st=1681135280~exp=1681135880~hmac=efe1312d5fce845e227ab93e609d4f7df1e18b9eeb4d53e9e184fa37914ab4de",
+         "job_title": "Graphic Designer",
+         "company_name": "Design Co.",
+         "remote_or_onsite": "Onsite",
+         "location": "Los Angeles",
+         "fulltime_or_parttime": "Full-time",
+         "salary": "50,000 - 70,000 USD per year",
+         "job_description": "We are seeking a Graphic Designer to join our team...",
+         "job_responsibility": "Create visual concepts...",
+         "educational_requirements": "Bachelor's degree in Graphic Design or related field",
+         "experiences": "1+ years of experience in graphic design",
+         "contact_information": {
+            "phone": "+1-123-456-7890",
+            "email": "info@designco.com"
+         }
+      },
+      {
+         "id": 5,
+         "company_logo": "https://img.freepik.com/free-vector/logo-template-design_1289-138.jpg?w=740&t=st=1681135329~exp=1681135929~hmac=363859c1efb413e21ad18166a4631751294da9f4a684ade903082ae695a69d0c",
+         "job_title": "Sales Representative",
+         "company_name": "Sales Co.",
+         "remote_or_onsite": "Onsite",
+         "location": "Chicago",
+         "fulltime_or_parttime": "Full-time",
+         "salary": "Base salary plus commission",
+         "job_description": "We are seeking a Sales Representative to join our team...",
+         "job_responsibility": "Develop and maintain relationships with clients...",
+         "educational_requirements": "High school diploma or equivalent",
+         "experiences": "2+ years of sales experience",
+         "contact_information": {
+            "phone": "+1-312-555-1234",
+            "email": "jobs@salesco.com"
+         }
+      },
+      {
+         "id": 6,
+         "company_logo": "https://img.freepik.com/free-vector/abstract-gradient-purple-hub-logo-with-tagline_23-2149813062.jpg?w=740&t=st=1681135388~exp=1681135988~hmac=950aabfc47f3b3e626189d040041fee30ae0c952806d4c9f586ed9cd9bf6bd5b",
+         "job_title": "Human Resources Manager",
+         "company_name": "HR Solutions",
+         "remote_or_onsite": "Onsite",
+         "location": "Dallas",
+         "fulltime_or_parttime": "Full-time",
+         "salary": "80,000 - 100,000 USD per year",
+         "job_description": "We are seeking a Human Resources Manager to join our team...",
+         "job_responsibility": "Oversee and manage HR activities...",
+         "educational_requirements": "Bachelor's degree in Human Resources or related field",
+         "experiences": "5+ years of experience in HR management",
+         "contact_information": {
+            "phone": "+1-214-555-1212",
+            "email": "careers@hrsolutions.com"
+         }
+      }
+   ]
+}

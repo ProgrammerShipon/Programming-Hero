@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-container {
+	@apply container mx-auto p-5;
+}
+
+nav a.active {
+	@apply text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500;
+}
+
+.main-btn {
+	@apply inline-block transition-all duration-300 text-white py-2 px-4 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 cursor-pointer select-none;
+	@apply inline-block text-white py-2 px-4 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 cursor-pointer select-none transition duration-300;
+}
+
+.main-btn:hover {
+	@apply bg-gradient-to-l duration-500 from-indigo-500 to-purple-500;
+}
+
+.nav-link {
+	@apply px-4;
+}
+
+.nav-link:hover {
+	@apply transition duration-300 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500;
+}
+
+.footer-content h1,
+.footer-content h2 {
+	@apply text-white mb-3 text-2xl;
+}
+
+.footer-content h1 {
+	@apply mb-8 text-3xl;
+}
+
+.footer-content p,
+.footer-content a {
+	@apply text-gray-300 leading-7;
+}
+
+.footer-content a {
+	@apply text-lg;
+}
+
+.footer-content a:hover {
+	@apply underline;
+}
+
+.footer-icons {
+	@apply mt-6 text-2xl flex flex-wrap gap-3;
+}
+
+.footer-icons svg {
+	@apply bg-gray-50 flex justify-center items-center h-8 w-8 p-2  rounded-full;
+}

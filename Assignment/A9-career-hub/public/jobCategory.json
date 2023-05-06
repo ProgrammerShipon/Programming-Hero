@@ -1,0 +1,107 @@
+[
+   {
+     "id": 1,
+     "category_name": "Engineering",
+     "category_logo": "https://img.freepik.com/free-icon/computer_318-923993.jpg?size=626&ext=jpg&ga=GA1.1.2052780206.1681078998&semt=sph",
+     "jobs_available": [
+       {
+         "job_id": 1,
+         "title": "Software Engineer",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+         "location": "San Francisco, CA",
+         "salary": "$120,000 - $150,000"
+       },
+       {
+         "job_id": 2,
+         "title": "Hardware Engineer",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+         "location": "Austin, TX",
+         "salary": "$100,000 - $130,000"
+       },
+       {
+         "job_id": 3,
+         "title": "Data Scientist",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+         "location": "New York, NY",
+         "salary": "$130,000 - $160,000"
+       }
+     ]
+   },
+   {
+     "id": 2,
+     "category_name": "Marketing",
+     "category_logo": "https://img.freepik.com/free-icon/megaphone_318-24884.jpg?size=626&ext=jpg",
+     "jobs_available": [
+       {
+         "job_id": 1,
+         "title": "Digital Marketing Specialist",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+         "location": "Los Angeles, CA",
+         "salary": "$90,000 - $110,000"
+       },
+       {
+         "job_id": 2,
+         "title": "Marketing Manager",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+         "location": "Chicago, IL",
+         "salary": "$100,000 - $120,000"
+       },
+       {
+         "job_id": 3,
+         "title": "Social Media Coordinator",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+         "location": "Miami, FL",
+         "salary": "$70,000 - $90,000"
+       }
+     ]
+   },
+   {
+     "id": 3,
+     "category_name": "Finance",
+     "category_logo": "https://img.freepik.com/free-icon/financial-graph-symbol_318-9342.jpg?size=626&ext=jpg",
+     "jobs_available": [
+       {
+         "job_id": 1,
+         "title": "Financial Analyst",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+         "location": "San Diego, CA",
+         "salary": "$80,000 - $100,000"
+       },
+       {
+         "job_id": 2,
+         "title": "Accountant",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+         "location": "Houston, TX",
+         "salary": "$70,000 - $90,000"
+       },
+       {
+         "job_id": 3,
+         "title": "Investment Banker",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+         "location": "New York, NY",
+         "salary": "$150,000 - $200,000"
+       }
+     ]
+   },
+   {
+      "id": 4,
+      "category_name": "Design",
+      "category_logo": "https://img.freepik.com/free-icon/pencil_318-105105.jpg?size=626&ext=jpg",
+      "jobs_available": [
+        {
+          "job_id": 1,
+          "title": "Graphic Designer",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "location": "Chicago, IL",
+          "salary": "$60,000 - $80,000"
+        },
+        {
+          "job_id": 2,
+          "title": "UX Designer",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "location": "Seattle, WA",
+          "salary": "$80,000 - $100,000"
+        }
+      ]
+    }
+   ]

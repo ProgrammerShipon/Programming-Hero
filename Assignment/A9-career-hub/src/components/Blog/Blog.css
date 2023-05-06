@@ -1,0 +1,20 @@
+.blog-page {
+	@apply grid grid-cols-1 md:grid-cols-2 gap-5;
+}
+.blog-page > div {
+	background: linear-gradient(
+		90deg,
+		rgba(126, 144, 254, 0.05) 0%,
+		rgba(152, 115, 255, 0.05) 100%
+	);
+
+	@apply border border-gray-400 p-4 rounded-lg;
+}
+
+.blog-page div h1 {
+	@apply text-2xl font-semibold mb-3;
+}
+
+.blog-page div p {
+	@apply py-2 md:py-3;
+}

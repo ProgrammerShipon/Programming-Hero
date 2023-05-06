@@ -1,0 +1,10 @@
+.jobDetailCart {
+	background: linear-gradient(90deg, #7e90fe1a 0%, #9873ff1a 100%);
+
+   @apply divide-y-2 divide-gray-400 leading-8;
+}
+
+.jobDetailCart div p {
+   @apply flex gap-3;
+}
+
