@@ -1,0 +1,23 @@
+.blogs-content {
+	@apply grid gap-7 grid-cols-1 lg:grid-cols-2 p-4 border rounded;
+}
+
+.blogs-content > div {
+	@apply border p-4 rounded-md divide-y;
+}
+
+.blogs-content ul {
+	@apply list-disc pl-10;
+}
+
+.blogs-content > div > h1 {
+	@apply font-semibold text-2xl mb-4;
+}
+
+.blogs-content > div h2 {
+	@apply font-semibold text-lg mb-2 mt-5;
+}
+
+.blogs-content > div p {
+	@apply my-4;
+}

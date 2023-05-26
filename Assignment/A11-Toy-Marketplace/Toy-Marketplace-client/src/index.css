@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ul li a.active {
+	background: transparent;
+	color: #18c4f7;
+}
+
+ul li a.active:hover {
+	background: #e8e9eb;
+	color: #18c4f7;
+}
