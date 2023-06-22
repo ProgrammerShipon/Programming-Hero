@@ -19,7 +19,9 @@ const BistroBoss = () => {
 							officiis praesentium! Deserunt magni aperiam dolor eius dolore at,
 							nihil iusto ducimus incidunt quibusdam nemo.
 						</p>
-						<button className="btn btn-primary">Get Started</button>
+						<button className="btn border-0 border-b-[2px] btn-outline btn-success">
+							Get Started
+						</button>
 					</div>
 				</div>
 			</div>

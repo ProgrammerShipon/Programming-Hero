@@ -1,5 +1,64 @@
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
+
 const FoodCard = ({ item }) => {
-	const { name, image, recipe, price } = item;
+	const { user } = useContext(AuthContext);
+	const navigate = useNavigate();
+
+	const { _id, name, image, recipe, price } = item;
+
+	const handleAddToCart = (cart) => {
+		console.log(cart);
+		if (user && user.email) {
+			const cartItem = {
+				menuItemId: _id,
+				name,
+				image,
+				price,
+				userName: user?.displayName,
+				email: user?.email,
+			};
+			fetch("http://localhost:5000/carts", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(cartItem),
+			})
+				.then((res) => res.json())
+				.then((data) => {
+					console.log(data);
+
+					if (data.insertedId) {
+						Swal.fire({
+							position: "center",
+							title: "Added to cart",
+							icon: "success",
+							showConfirmButton: false,
+							timer: 1500,
+						});
+					}
+				})
+				.catch((err) => {
+					console.error(err);
+				});
+		} else {
+			Swal.fire({
+				title: "Please login to order the food",
+				icon: "warning",
+				showCancelButton: true,
+				confirmButtonColor: "#3084d6",
+				cancelButtonColor: "#d33",
+				confirmButtonText: "Login Now!",
+			}).then((result) => {
+				if (result.isConfirmed) {
+					navigate("/login");
+				}
+			});
+		}
+	};
 
 	return (
 		<div>
@@ -15,7 +74,12 @@ const FoodCard = ({ item }) => {
 					<h2 className="card-title"> {name} </h2>
 					<p> {recipe} </p>
 					<div className="card-actions justify-center">
-						<button className="btn btn-primary"> ADD TO CART </button>
+						<button
+							onClick={() => handleAddToCart(item)}
+							className="btn border-0 border-b-[2px] btn-outline btn-success"
+						>
+							ADD TO CART
+						</button>
 					</div>
 				</div>
 			</div>

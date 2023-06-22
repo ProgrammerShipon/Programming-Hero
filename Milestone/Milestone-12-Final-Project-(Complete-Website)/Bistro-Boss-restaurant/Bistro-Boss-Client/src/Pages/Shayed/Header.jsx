@@ -1,17 +1,40 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProvider";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Header = () => {
+	const { user, logOut } = useContext(AuthContext);
+	console.log("header -> ", user);
+
 	const navOptions = (
 		<>
 			<li>
 				<NavLink to="/">Home</NavLink>
 			</li>
+
 			<li>
 				<NavLink to="/menu">Our Menu</NavLink>
 			</li>
+
 			<li>
 				<NavLink to="/order">Order</NavLink>
 			</li>
+
+			<li>
+				<NavLink to="#">
+					{user?.email && (
+						<div className="indicator">
+							<span className="indicator-item badge badge-secondary">0</span>
+							<button className="py-3 px-3">
+								<FaShoppingCart className="text-xl" />
+							</button>
+						</div>
+					)}
+				</NavLink>
+			</li>
+
+			<li>{!user?.email && <NavLink to="/login">Login</NavLink>}</li>
 		</>
 	);
 
@@ -38,7 +61,7 @@ const Header = () => {
 						</label>
 						<ul
 							tabIndex={0}
-							className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+							className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box text-gray-800 w-52"
 						>
 							{navOptions}
 						</ul>
@@ -49,7 +72,15 @@ const Header = () => {
 					<ul className="menu menu-horizontal px-1">{navOptions}</ul>
 				</div>
 				<div className="navbar-end">
-					<a className="btn">Get started</a>
+					{user?.email && (
+						<>
+							{user?.email}
+							<button onClick={() => logOut()} className="btn ml-1">
+								{" "}
+								LogOut
+							</button>
+						</>
+					)}
 				</div>
 			</div>
 		</div>
